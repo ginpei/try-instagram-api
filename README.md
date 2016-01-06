@@ -1,3 +1,9 @@
+# About
+
+An example to log in to Instagram, get own profile and show recent photos.
+
+![./image.png](./image.png)
+
 # Getting Started
 
 ## 1. Clone
