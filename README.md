@@ -6,10 +6,11 @@ An example to log in to Instagram, get own profile and show recent photos.
 
 # Getting Started
 
-## 1. Clone
+## 1. Install
 
 ```
 $ git clone git@github.com:ginpei/try-instagram-api.git
+$ npm i
 ```
 
 ## 2. Set Credential
