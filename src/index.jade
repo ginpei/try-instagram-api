@@ -7,8 +7,22 @@ html(lang='en')
 	body
 		h1 Instagram API
 		div
-			button.js-start Start
+			button.js-login(disabled) Log in
+			| →
+			button.js-getMyself(disabled) Get Myself
+			| →
+			button.js-getRecents(disabled) Get Recent Photos
+		p
+			| User =
+			span.js-user
+		h2 Recent Photos
+		ol.recents.js-recents
+		script#template-photo(type=text/x-template).
+			<li class="recents-item">
+				<a href="${link}"><img src="${src}" width=${width} height=${height} /></a>
+			</li>
 		script(src="gquery.all.js")
+		script(src="creds.js")
 		script(src="main.js")
 		script.
 			if (location.search === '?live') {
