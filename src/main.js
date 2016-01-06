@@ -71,8 +71,9 @@ class Controller {
 	 */
 	update() {
 		$('.js-login').prop('disabled', false);
-		$('.js-getMyself').prop('disabled', !this.accessToken);
-		$('.js-getRecents').prop('disabled', !this.user);
+		let loggedIn = this.accessToken;
+		$('.js-getMyself').prop('disabled', !loggedIn);
+		$('.js-getRecents').prop('disabled', !loggedIn);
 	}
 
 	/**
@@ -109,7 +110,7 @@ class Controller {
 	 * Get user's recent photos and show them.
 	 */
 	getRecents() {
-		let url = `https://api.instagram.com/v1/users/${this.user.id}/media/recent/?access_token=${this.accessToken}`;
+		let url = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${this.accessToken}`;
 		jsonp(url, (response)=>{
 			let data = response.data;
 			this.renderPhotos(data);
