@@ -33,4 +33,4 @@ $ npm start
 
 ### 4. Try on your brouser
 
-- `http://192.168.11.3:3000/`
+- `http://localhost:3000/`
