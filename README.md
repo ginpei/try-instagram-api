@@ -1,5 +1,7 @@
 # About
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ginpei/try-instagram-api.svg)](https://greenkeeper.io/)
+
 An example to log in to Instagram, get own profile and show recent photos.
 
 ![./image.png](./image.png)
